@@ -1,0 +1,42 @@
+Screen:
+    MDCard:
+        size_hint: None, None
+        size: 600, 600
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: 'vertical'
+
+        MDLabel:
+            id: welcome_label
+            text: "WELCOME"
+            font_size: 40
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+
+        MDLabel:
+            id: welcome_label
+            text: "Set Object password"
+            font_size: 40
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+
+        Camera:
+            id: camera
+            resolution: (660, 480)
+            size: 330, 240
+            play: True  
+        
+        
+        MDRoundFlatButton:
+            text: "Set password"
+            font_size: 12
+            pos_hint: {"center_x": 0.5}
+            on_press: app.logger()
+        
+

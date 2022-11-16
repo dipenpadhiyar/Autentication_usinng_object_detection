@@ -1,0 +1,37 @@
+<MyGridLayout>
+    name:name
+    mid_name:midname
+    surname:surname
+    labeloutput:labeloutput
+
+    GridLayout:
+        cols:2
+        size: root.width, root.height
+        GridLayout:
+            cols:2
+           
+            Label:
+                text:'Name'
+            TextInput:
+                id: name
+                multiline: False           
+            Label:
+                text:'MiddulName'
+            TextInput:
+                id: midname
+                multiline: False
+
+            Label:
+                text:'Surname'
+            TextInput:
+                id: surname
+                multiline: False
+    Button:
+        text:'submit'
+        font_size : 32
+        on_press: root.press()
+        width:250
+    Label:
+        id:labeloutput
+        text: 'dipepn'
+        multiline: False
